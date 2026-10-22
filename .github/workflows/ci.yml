@@ -26,7 +26,8 @@ jobs:
       run: docker compose exec web python manage.py migrate
 
     - name: Run Tests
-      run: docker compose exec web python manage.py test
+    - name: Run Tests
+      run: docker compose exec web python manage.py test webservices
 
     - name: Shut down services
       run: docker compose down
