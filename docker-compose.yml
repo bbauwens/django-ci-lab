@@ -8,6 +8,8 @@ services:
       - "8000:8000"
     depends_on:
       - db
+    networks:
+       - app-network
   
   db:
      image: postgres:16
