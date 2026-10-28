@@ -11,7 +11,7 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the working directory contents into the container
-COPY . .
+
 
 # Expose port 8000
 EXPOSE 8000
