@@ -8,6 +8,12 @@ services:
       - "8000:8000"
     depends_on:
       - db
+    environment:
+      POSTGRES_USER: appuser
+      POSTGRES_PASSWORD: example_password
+      POSTGRES_DB: appdb
+      POSTGRES_HOST: db
+      POSTGRES_PORT: 5432
     networks:
        - app-network
   
